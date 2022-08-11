@@ -2,6 +2,7 @@ package br.com.dio.desafio.dominio;
 
 import java.util.LinkedHashSet;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 
 public class Dev {
@@ -15,7 +16,7 @@ public class Dev {
 	}
 	
 	public void progredir() {
-		Optional<Conteudo> this.conteudosInscritos.stream().findFirst();
+		Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
 		if(conteudo.isPresent()) {
 			this.conteudosConcluidos.add(conteudo.get());
 			this.conteudosInscritos.remove(conteudo.get());

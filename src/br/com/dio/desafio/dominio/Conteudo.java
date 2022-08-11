@@ -7,7 +7,7 @@ public abstract class Conteudo {
 	private String titulo;
 	private String descricao;
 
-	private double calcularXp;
+	
 
 	
 	public abstract double calcularXp();
@@ -29,11 +29,7 @@ public abstract class Conteudo {
 	}
 
 	public double getCalcularXp() {
-		return calcularXp;
-	}
-
-	public void setCalcularXp(double calcularXp) {
-		this.calcularXp = calcularXp;
+		return calcularXp();
 	}
 
 	public static double getXpPadrao() {

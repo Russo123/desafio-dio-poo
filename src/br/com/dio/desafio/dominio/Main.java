@@ -27,6 +27,19 @@ public class Main {
 		System.out.println(mentoria);
 		
 		
+		Bootcamp bootcamp = new Bootcamp();
+		bootcamp.setNome("Bootcamp Java Developer");
+		bootcamp.setDescricao("Descrição Java Developer");
+		bootcamp.getConteudos().add(curso1);
+		bootcamp.getConteudos().add(curso2);
+		bootcamp.getConteudos().add(mentoria);
+		
+		Dev devFabiana = new Dev();
+		devFabiana.setNome("Fabiana");
+		
+		Dev devWagner = new Dev();
+		devWagner.setNome("Wagner");
+		
 	}
 
 }
