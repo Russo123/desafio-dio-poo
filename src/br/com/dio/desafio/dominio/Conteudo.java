@@ -7,6 +7,8 @@ public abstract class Conteudo {
 	private String titulo;
 	private String descricao;
 
+	private double calcularXp;
+
 	
 	public abstract double calcularXp();
 
@@ -37,6 +39,8 @@ public abstract class Conteudo {
 	public static double getXpPadrao() {
 		return XP_PADRAO;
 	}
+
+	protected abstract Conteudo get();
 	
 	
 	
