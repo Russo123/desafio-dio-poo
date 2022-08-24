@@ -36,10 +36,30 @@ public class Main {
 		
 		Dev devFabiana = new Dev();
 		devFabiana.setNome("Fabiana");
+		devFabiana.inscreverBootcamp(bootcamp);
+		System.out.println("Conteúdos Inscritos Fabiana" + devFabiana.getConteudosInscritos());
+		devFabiana.progredir();
+		devFabiana.progredir();
+		System.out.println("-");
+		System.out.println("Conteúdos Concluídos Fabiana" + devFabiana.getConteudosConcluidos());
+		System.out.println("Conteúdos Concluídos Fabiana" + devFabiana.getConteudosConcluidos());
+		System.out.println("XP:" + devFabiana.calcularTotalXp());
+		
+		
+		System.out.println("--------------");
+		
 		
 		Dev devWagner = new Dev();
 		devWagner.setNome("Wagner");
-		
+		devWagner.inscreverBootcamp(bootcamp);
+		System.out.println("Conteúdos Inscritos Wagner" + devWagner.getConteudosInscritos());
+		devWagner.progredir();
+		devWagner.progredir();
+		devWagner.progredir();
+		System.out.println("-");
+		System.out.println("Conteúdos Concluídos Wagner" + devWagner.getConteudosConcluidos());
+		System.out.println("Conteúdos Concluídos Wagner" + devWagner.getConteudosConcluidos());
+		System.out.println("XP" + devWagner.calcularTotalXp());
 	}
 
 }
