@@ -11,7 +11,7 @@ public class Main {
 		
 		Curso curso2 = new Curso();
 		curso2.setTitulo("Curso js");
-		curso2.setDescricao("Descrição curso js");
+		curso2.setDescricao("Descrição curso js");  
 		curso2.setCargaHoraria(4);
 		
 		Conteudo conteudo = new Curso();
